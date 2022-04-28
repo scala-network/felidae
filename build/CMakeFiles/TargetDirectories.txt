@@ -1,0 +1,9 @@
+/opt/Felidae/build/CMakeFiles/felidae.dir
+/opt/Felidae/build/CMakeFiles/api-example.dir
+/opt/Felidae/build/CMakeFiles/felidae-benchmark.dir
+/opt/Felidae/build/CMakeFiles/edit_cache.dir
+/opt/Felidae/build/CMakeFiles/rebuild_cache.dir
+/opt/Felidae/build/CMakeFiles/list_install_components.dir
+/opt/Felidae/build/CMakeFiles/install.dir
+/opt/Felidae/build/CMakeFiles/install/local.dir
+/opt/Felidae/build/CMakeFiles/install/strip.dir

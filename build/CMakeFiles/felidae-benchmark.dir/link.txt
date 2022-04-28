@@ -1,0 +1,1 @@
+/usr/bin/c++  -maes -DBLAKE3_NO_SSE2 -DBLAKE3_NO_SSE41 -DBLAKE3_NO_AVX2 -DBLAKE3_NO_AVX512 CMakeFiles/felidae-benchmark.dir/src/tests/benchmark.cpp.o -o felidae-benchmark  libfelidae.a 
