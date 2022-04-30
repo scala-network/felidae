@@ -37,9 +37,9 @@ extern "C" {
 #endif
 
 	/* KangarooTwelve */
-	void k12(const void *data, size_t length, void *hash);
+	void k12_f(const void *data, size_t length, void *hash);
 	/* Blake3 */
-	void blake3(const void *data, size_t length, void *hash);
+	void blake3_f(const void *data, size_t length, void *hash);
 	/* K12 + Blake3 */
 	void k12_blake3_hash(const void *data, size_t length, void *hash);
 

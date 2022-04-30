@@ -34,13 +34,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "blake3/blake3.h"
 
 /* KangarooTwelve */
-void k12(const void *data, size_t length, void *hash)
+void k12_f(const void *data, size_t length, void *hash)
 {
   KangarooTwelve((const unsigned char *)data, length, (unsigned char *)hash, 32, 0, 0);
 }
 
 /* Blake3 */
-void blake3(const void *data, size_t length, void *hash)
+void blake3_f(const void *data, size_t length, void *hash)
 {
 	blake3_hasher hasher;
 	blake3_hasher_init(&hasher);
@@ -51,7 +51,7 @@ void blake3(const void *data, size_t length, void *hash)
 void k12_blake3_hash(const void *data, size_t length, void *hash)
 { 
   for(uint64_t i = 0; i <= 4; i++) {
-	k12(data, length, hash);
-	blake3(hash, 32, hash);
+	k12_f(data, length, hash);
+	blake3_f(hash, 32, hash);
   }
 }
