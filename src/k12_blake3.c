@@ -50,7 +50,7 @@ void blake3(const void *data, size_t length, void *hash)
 
 void k12_blake3_hash(const void *data, size_t length, void *hash)
 { 
-  for(uint64_t i = 0; i <= 5; i++) {
+  for(uint64_t i = 0; i <= 4; i++) {
 	k12(data, length, hash);
 	blake3(hash, 32, hash);
   }
